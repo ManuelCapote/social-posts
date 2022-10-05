@@ -1,0 +1,14 @@
+.PostInList {
+  border-bottom: 1px solid lightgray;
+}
+
+.PostInList h2 {
+  margin-bottom: 2px;
+}
+
+.PostInList p {
+  margin-top: 2px;
+  padding-top: 0;
+  margin-bottom: 2px;
+  font-family: 'Dosis';
+}

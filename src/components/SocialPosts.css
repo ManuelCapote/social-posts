@@ -1,0 +1,33 @@
+.SocialPosts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dosis', sans-serif !important;
+}
+
+.SocialPosts button {
+  color: white;
+  background-color: #03a9f4;
+  border-radius: 10px;
+  height: 70px;
+  width: 60%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.SocialPosts ul {
+  list-style: none;
+  list-style-type: none;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.SocialPosts .postList {
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 60%;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
