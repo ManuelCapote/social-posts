@@ -20,16 +20,36 @@ const SocialPosts = () => {
         "My friend Beatrice has mad skills. She made the top 10! I'm just so proud of her!",
     },
   ])
+  const [showForm, setShowForm] = useState(false)
+
+  const addPost = (post: Post) => {
+    setPosts((prev) => [...prev, post])
+    setShowForm(() => false)
+  }
+
+  const deletePost = (index: number) => {
+    setPosts((prevPost) => [
+      ...prevPost.slice(0, index),
+      ...prevPost.slice(index + 1),
+    ])
+  }
+
+  const createNewThought = () => {}
+
   return (
     <div className='SocialPosts'>
-      <button className='PostFormBtn'>
+      <button className='PostFormBtn' onClick={() => setShowForm(true)}>
         <p>New Thought</p>
       </button>
-      <PostForm />
+      {showForm && (
+        <PostForm onSubmitForm={addPost} closeForm={() => setShowForm(false)} />
+      )}
       <div className='postList'>
         <ul>
-          {posts.map((post) => {
-            return <PostInList post={post} />
+          {posts.map((post, index) => {
+            return (
+              <PostInList post={post} deletePost={() => deletePost(index)} />
+            )
           })}
         </ul>
       </div>

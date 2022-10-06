@@ -1,5 +1,7 @@
 .PostInList {
   border-bottom: 1px solid lightgray;
+  display: flex;
+  text-align: left;
 }
 
 .PostInList h2 {
@@ -11,4 +13,14 @@
   padding-top: 0;
   margin-bottom: 2px;
   font-family: 'Dosis';
+}
+.PostInList button {
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 10px;
+  background: #000 !important;
+  border: none;
+  font-size: 10px !important;
 }

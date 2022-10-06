@@ -1,0 +1,71 @@
+.PostForm {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.PostForm form {
+  width: 60%;
+  background: #79c5e8;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.PostForm label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.PostForm input,
+textarea {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.PostForm input {
+  height: 40px;
+}
+.PostForm textarea {
+  min-height: 150px;
+}
+
+.PostForm form .closeButton {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  color: #79c5e8;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 0;
+  margin-left: auto;
+  cursor: pointer;
+  position: relative;
+  bottom: -20px;
+}
+
+.PostForm form .submitForm {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
